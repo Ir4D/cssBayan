@@ -2,6 +2,86 @@
 /* tablet: 820x1180 */
 /* desktop: 1920×1080 */
 
+@media (hover: hover) {
+  .main-container:hover .meme-heading {
+    color: #3e0f4b;
+  }
+  
+  .main-container:hover .meme-icon {
+    display: block;
+    transition: all 0.7s ease-out;
+  }
+
+  .meme-container:hover {
+    cursor: pointer;
+  }
+
+  .meme-container:active {
+    cursor: url(../assets/img/cat-purple.png), wait;
+  }
+
+  .radio:hover ~ .meme-img {
+    margin-bottom: 3rem;
+    max-height: 100vh;
+  }
+
+  .radio:hover ~ .meme-heading > .meme-icon {
+    width: 2rem;
+    height: 2rem;
+    background: url(../assets/img/multiply-purple.png) 100% 100% no-repeat;
+    background-size: cover;
+  }
+}
+
+
+/* ************************** */
+/* ABOVE 320 (20em)           */
+/* 320 / 16 = 20              */
+/* ************************** */
+@media (min-width: 20em) {
+  .header {
+    min-width: 28rem;
+    max-width: 70rem;
+  }
+
+  .main-container {
+    min-width: 28rem;
+    max-width: 70rem;
+  }
+
+  .meme-img {
+    width: 26rem;
+  }
+
+  .img-1 {
+    height: 30.9rem;
+  }
+
+  .img-2 {
+    height: 19.4rem;
+  }
+
+  .img-3 {
+    height: 31.8rem;
+  }
+
+  .img-4 {
+    height: 17.3rem;
+  }
+
+  .img-5 {
+    height: 34.3rem;
+  }
+
+  .img-6 {
+    height: 17.6rem;
+  }
+
+  .img-7 {
+    height: 30rem;
+  }
+}
+
 
 /* ************************** */
 /* ABOVE 820 (51.25em)        */
@@ -10,7 +90,7 @@
 @media (min-width: 51.25em) {
   .header {
     min-width: 80rem;
-    max-width: 100rem;
+    max-width: 90rem;
   }
 
   .header-title {
@@ -19,11 +99,15 @@
 
   .main-container {
     min-width: 80rem;
-    max-width: 100rem;
+    max-width: 90rem;
   }
 
   .meme-heading {
     font-size: 1.8rem;
+  }
+
+  .meme-title {
+    margin-bottom: 0;
   }
 
   .meme-img {
@@ -114,31 +198,13 @@
   .img-7 {
     height: 46.2rem;
   }
-}
 
-@media (hover: hover) {
-  .main-container:hover .meme-heading {
-    color: #3e0f4b;
-  }
-  
-  .main-container:hover .meme-icon {
-    display: block;
-    transition: all 0.7s ease-out;
-  }
-
-  .meme-container:hover {
-    cursor: pointer;
-  }
-
-  .radio:hover ~ .meme-img {
-    margin-bottom: 3rem;
-    max-height: 100vh;
-  }
-
-  .radio:hover ~ .meme-heading > .meme-icon {
-    width: 2rem;
-    height: 2rem;
-    background: url(../assets/img/multiply-purple.png) 100% 100% no-repeat;
-    background-size: cover;
+  @media (hover: hover) {
+    .radio:hover ~ .meme-heading > .meme-icon {
+      width: 3rem;
+      height: 3rem;
+      background: url(../assets/img/multiply-purple.png) 100% 100% no-repeat;
+      background-size: cover;
+    }
   }
 }

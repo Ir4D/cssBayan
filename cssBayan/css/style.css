@@ -16,8 +16,7 @@ body {
 }
 
 .header {
-  min-width: 28rem;
-  max-width: 70rem;
+  min-width: 26rem;
   margin: 0 auto;
   padding: 2rem 2rem 0 2rem;
   margin-top: 2rem;
@@ -32,8 +31,7 @@ body {
 .main-container {
   display: flex;
   flex-direction: column;
-  min-width: 28rem;
-  max-width: 70rem;
+  min-width: 26rem;
   padding: 2rem;
   margin: 0 auto;
 }
@@ -58,8 +56,12 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   color: #fff0ff;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   transition: all 0.7s ease;
+}
+
+.meme-title {
+  margin-bottom: 0.6rem;
 }
 
 .meme-icon {
@@ -72,43 +74,43 @@ body {
 }
 
 .img-1 {
-  height: 30.9rem;
+  height: 26.1rem;
   background: url(../assets/img/meme1.png) 100% 100% no-repeat;
 }
 
 .img-2 {
-  height: 19.4rem;
+  height: 16.4rem;
   background: url(../assets/img/meme2.png) 100% 100% no-repeat;
 }
 
 .img-3 {
-  height: 31.8rem;
+  height: 26.9rem;
   background: url(../assets/img/meme3.png) 100% 100% no-repeat;
 }
 
 .img-4 {
-  height: 17.3rem;
+  height: 14.6rem;
   background: url(../assets/img/meme4.png) 100% 100% no-repeat;
 }
 
 .img-5 {
-  height: 34.3rem;
+  height: 29rem;
   background: url(../assets/img/meme5.png) 100% 100% no-repeat;
 }
 
 .img-6 {
-  height: 17.6rem;
+  height: 14.9rem;
   background: url(../assets/img/meme6.png) 100% 100% no-repeat;
 }
 
 .img-7 {
-  height: 30rem;
+  height: 25.4rem;
   background: url(../assets/img/meme7.png) 100% 100% no-repeat;
 }
 
 .meme-img {
   display: block;
-  width: 26rem;
+  width: 22rem;
   overflow: hidden;
   margin: 0 auto;
   background-size: cover;
