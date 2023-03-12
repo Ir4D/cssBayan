@@ -8,8 +8,8 @@
   }
   
   .main-container:hover .meme-icon {
-    display: block;
-    transition: all 0.7s ease-out;
+    transition: all 0.7s ease-in;
+    opacity: 1;
   }
 
   .meme-container:hover {
@@ -23,6 +23,7 @@
   .radio:hover ~ .meme-img {
     margin-bottom: 3rem;
     max-height: 100vh;
+    transform: scale(1, 1);
   }
 
   .radio:hover ~ .meme-heading > .meme-icon {
