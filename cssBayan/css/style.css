@@ -121,6 +121,10 @@ body {
   max-height: 0;
 }
 
+.radio:checked ~ .meme-heading {
+  color: #3e0f4b;
+}
+
 .radio:checked ~ .meme-img {
   display: block;
   margin-bottom: 3rem;
