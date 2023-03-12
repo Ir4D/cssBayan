@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin-bottom: 3rem;
+  font-family: 'Arimo', sans-serif;
+  background: linear-gradient(to top left, #2a77aa, rgba(255, 153, 150, 0), #984c60), linear-gradient(to top right, #64a3bf, rgba(255, 153, 150, 0), #bf98c8) #dca2a5;
+  background-attachment: fixed;
+}
+
+.header {
+  min-width: 26rem;
+  margin: 0 auto;
+  padding: 2rem 2rem 0 2rem;
+  margin-top: 2rem;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  color: #fff0ff;
+  font-weight: 700;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 26rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.radio {
+  width: 0;
+  height: 0;
+  appearance: none;
+}
+
+.meme-container {
+  border-top: 0.1rem solid #fff0ff;
+}
+
+.meme-container:active {
+  cursor: url(../assets/img/cat-purple.png), wait;
+}
+
+.meme-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff0ff;
+  margin-bottom: 1rem;
+  transition: all 0.7s ease;
+}
+
+.meme-title {
+  margin-bottom: 0.6rem;
+}
+
+.meme-icon {
+  width: 2rem;
+  height: 2rem;
+  background: url(../assets/img/plus-purple.png) 100% 100% no-repeat;
+  background-size: cover;
+  transition: all 0.7s;
+  opacity: 0;
+}
+
+.img-1 {
+  height: 26.1rem;
+  background: url(../assets/img/meme1.png) 100% 100% no-repeat;
+}
+
+.img-2 {
+  height: 16.4rem;
+  background: url(../assets/img/meme2.png) 100% 100% no-repeat;
+}
+
+.img-3 {
+  height: 26.9rem;
+  background: url(../assets/img/meme3.png) 100% 100% no-repeat;
+}
+
+.img-4 {
+  height: 14.6rem;
+  background: url(../assets/img/meme4.png) 100% 100% no-repeat;
+}
+
+.img-5 {
+  height: 29rem;
+  background: url(../assets/img/meme5.png) 100% 100% no-repeat;
+}
+
+.img-6 {
+  height: 14.9rem;
+  background: url(../assets/img/meme6.png) 100% 100% no-repeat;
+}
+
+.img-7 {
+  height: 25.4rem;
+  background: url(../assets/img/meme7.png) 100% 100% no-repeat;
+}
+
+.meme-img {
+  width: 22rem;
+  overflow: hidden;
+  margin: 0 auto;
+  background-size: cover;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.2rem 1.5rem 0 #d8cbd8;
+  margin-top: 2rem;
+  transition: all 1.2s ease-in;
+  max-height: 0;
+  transform: scale(0, 0);
+}
+
+.radio:checked ~ .meme-heading {
+  color: #3e0f4b;
+}
+
+.radio:checked ~ .meme-img {
+  margin-bottom: 3rem;
+  max-height: 100vh;
+  transform: scale(1, 1);
+}
+
+.radio:checked ~ .meme-heading > .meme-icon {
+  width: 2rem;
+  height: 2rem;
+  background: url(../assets/img/multiply-purple.png) 100% 100% no-repeat;
+  background-size: cover;
+}
